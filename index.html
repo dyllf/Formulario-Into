@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <section class="area">
+        <div class="login">
+            <div>
+                <h1>Formulario Cliente</h1>
+            </div>
+            <form method="POST">
+
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
+   
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"  placeholder="Digite o seu Email" required>
+   
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Seu numero de telefone" required>
+   
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+   
+                <label>Sexo:</label>
+                <label for="masculino">
+                    <input type="radio" id="masculino" name="sexo" value="masculino" required> Masculino
+                </label>
+                <label for="feminino">
+                    <input type="radio" id="feminino" name="sexo" value="feminino" required> Feminino
+                </label>
+                <label for="outro">
+                    <input type="radio" id="outro" name="sexo" value="outro" required> Outro
+                </label>
+
+
+                <label for="ilha">Selecione a sua ilha:</label>
+                <select name="ilha" id="ilha">
+                    <option value="SA">Santo Antão</option>
+                    <option value="SV">São Vicente</option>
+                    <option value="SN">São Nicolau</option>
+                    <option value="SL">Sal</option>
+                    <option value="BV">Boa Vista</option>
+                    <option value="MA">Maio</option>
+                    <option value="ST">Santiago</option>
+                    <option value="FG">Fogo</option>
+                    <option value="BR">Brava</option>
+                </select>
+
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Digite o seu endereço" required>
+   
+               
+                <button type="submit">Enviar Candidatura</button>
+            </form>
+        </div>
+    </section>    
+</body>
+</html>
